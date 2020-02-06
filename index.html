@@ -61,10 +61,10 @@
       <div class="outer">
         <section id="main">
   
-    <article id="post-axios拦截器" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-nodejs学习" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2020/02/06/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" class="article-date">
-  <time datetime="2020-02-06T08:06:38.844Z" itemprop="datePublished">2020-02-06</time>
+    <a href="/2017/04/06/nodejs%E5%AD%A6%E4%B9%A0/" class="article-date">
+  <time datetime="2017-04-06T06:11:20.000Z" itemprop="datePublished">2017-04-06</time>
 </a>
     
   </div>
@@ -75,7 +75,49 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/06/axios%E6%8B%A6%E6%88%AA%E5%99%A8/">axios拦截器</a>
+      <a class="article-title" href="/2017/04/06/nodejs%E5%AD%A6%E4%B9%A0/">nodejs学习</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="nodejs中res-write和res-end的使用"><a href="#nodejs中res-write和res-end的使用" class="headerlink" title="nodejs中res.write和res.end的使用"></a>nodejs中res.write和res.end的使用</h1><h2 id="res-write"><a href="#res-write" class="headerlink" title="res.write()"></a>res.write()</h2><h3 id="方法说明："><a href="#方法说明：" class="headerlink" title="方法说明："></a>方法说明：</h3><p>​    向请求的客户端发送响应内容，在res.end()之前，res.write()可以被执行多次，返回的数据会被拼接在一起，在其后面必须要用res.end()结束请求，否则前端会一直处于等待状态。</p>
+<h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法代码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">response.write(chunk, [encoding])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//chunk      是一个buffer 或 字符串，表示发送的内容</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//encoding   如果chunk是字符串，就需要指定encoding来说明它的编码方式，默认utf-8</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//实例</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">res.write(<span class="string">'内容或者buffer'</span>)</span></pre></td></tr></table></figure>
+
+<h2 id="res-end"><a href="#res-end" class="headerlink" title="res.end()"></a>res.end()</h2><h3 id="方法说明：-1"><a href="#方法说明：-1" class="headerlink" title="方法说明："></a>方法说明：</h3><p>​    结束响应，告诉客户端所有消息已经发送，当所有要返回的内容发送完毕时，该函数必须被调用一次。如果不调用该函数，客户端将一直处于等待状态。</p>
+<h3 id="语法代码"><a href="#语法代码" class="headerlink" title="语法代码"></a>语法代码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法代码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">response.end([data], [encoding])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//data        end()执行完毕后要输出的字符，如果指定了 data 的值，那就意味着在执行完 response.end() 之后，会接着执行一条 response.write(data , encoding);</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//encoding    对应data的字符编码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">res.end(<span class="string">'Hello World'</span>)</span></pre></td></tr></table></figure>
+
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2017/04/06/nodejs%E5%AD%A6%E4%B9%A0/" data-id="ck6agx1hp0003aguo1aj23pvy" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
+    <article id="post-axios拦截器" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/03/11/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" class="article-date">
+  <time datetime="2017-03-11T02:44:09.000Z" itemprop="datePublished">2017-03-11</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/03/11/axios%E6%8B%A6%E6%88%AA%E5%99%A8/">axios拦截器学习</a>
     </h1>
   
 
@@ -99,85 +141,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/06/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" data-id="ck6agkhqo00002guo5lwt9j3p" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-vue官方表单验证" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/02/06/vue%E5%AE%98%E6%96%B9%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/" class="article-date">
-  <time datetime="2020-02-06T08:06:38.843Z" itemprop="datePublished">2020-02-06</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/02/06/vue%E5%AE%98%E6%96%B9%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/">vue官方表单验证</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="Vue-官方Cookbook中的表单校验学习"><a href="#Vue-官方Cookbook中的表单校验学习" class="headerlink" title="Vue 官方Cookbook中的表单校验学习"></a>Vue 官方Cookbook中的表单校验学习</h1>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/02/06/vue%E5%AE%98%E6%96%B9%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/" data-id="ck6agkhqt00012guo1sxk6a23" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-nodejs学习" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2020/01/05/nodejs%E5%AD%A6%E4%B9%A0/" class="article-date">
-  <time datetime="2020-01-05T08:06:36.614Z" itemprop="datePublished">2020-01-05</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2020/01/05/nodejs%E5%AD%A6%E4%B9%A0/">nodejs学习</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="nodejs中res-write和res-end的使用"><a href="#nodejs中res-write和res-end的使用" class="headerlink" title="nodejs中res.write和res.end的使用"></a>nodejs中res.write和res.end的使用</h1><h2 id="res-write"><a href="#res-write" class="headerlink" title="res.write()"></a>res.write()</h2><h3 id="方法说明："><a href="#方法说明：" class="headerlink" title="方法说明："></a>方法说明：</h3><p>​    向请求的客户端发送响应内容，在res.end()之前，res.write()可以被执行多次，返回的数据会被拼接在一起，在其后面必须要用res.end()结束请求，否则前端会一直处于等待状态。</p>
-<h3 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法代码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">response.write(chunk, [encoding])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//chunk      是一个buffer 或 字符串，表示发送的内容</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//encoding   如果chunk是字符串，就需要指定encoding来说明它的编码方式，默认utf-8</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//实例</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">6</span></pre></td><td class="code"><pre><span class="line">res.write(<span class="string">'内容或者buffer'</span>)</span></pre></td></tr></table></figure>
-
-<h2 id="res-end"><a href="#res-end" class="headerlink" title="res.end()"></a>res.end()</h2><h3 id="方法说明：-1"><a href="#方法说明：-1" class="headerlink" title="方法说明："></a>方法说明：</h3><p>​    结束响应，告诉客户端所有消息已经发送，当所有要返回的内容发送完毕时，该函数必须被调用一次。如果不调用该函数，客户端将一直处于等待状态。</p>
-<h3 id="语法代码"><a href="#语法代码" class="headerlink" title="语法代码"></a>语法代码</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//语法代码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">2</span></pre></td><td class="code"><pre><span class="line">response.end([data], [encoding])</span></pre></td></tr><tr><td class="gutter"><pre><span class="line">3</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//data        end()执行完毕后要输出的字符，如果指定了 data 的值，那就意味着在执行完 response.end() 之后，会接着执行一条 response.write(data , encoding);</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">4</span></pre></td><td class="code"><pre><span class="line"><span class="comment">//encoding    对应data的字符编码</span></span></pre></td></tr><tr><td class="gutter"><pre><span class="line">5</span></pre></td><td class="code"><pre><span class="line">res.end(<span class="string">'Hello World'</span>)</span></pre></td></tr></table></figure>
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://yoursite.com/2020/01/05/nodejs%E5%AD%A6%E4%B9%A0/" data-id="ck50qg0s90000lwuo9o1cea9p" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/03/11/axios%E6%8B%A6%E6%88%AA%E5%99%A8/" data-id="ck6agx1hg0000aguodqvu7w1h" class="article-share-link">Share</a>
       
       
     </footer>
@@ -238,7 +202,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/08/25/forEach-js/" data-id="ck50ozj7k0001bcuofyzl1a4t" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/08/25/forEach-js/" data-id="ck6agx1hn0001aguo3u5e4j11" class="article-share-link">Share</a>
       
       
     </footer>
@@ -274,7 +238,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/07/21/demo/" data-id="ck50ozj7f0000bcuo943700xk" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2016/07/21/demo/" data-id="ck6agx1ho0002aguo2o7da7r4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -302,7 +266,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/02/">February 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/01/">January 2020</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/08/">August 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li></ul>
     </div>
   </div>
 
@@ -315,15 +279,11 @@
       <ul>
         
           <li>
-            <a href="/2020/02/06/axios%E6%8B%A6%E6%88%AA%E5%99%A8/">axios拦截器</a>
+            <a href="/2017/04/06/nodejs%E5%AD%A6%E4%B9%A0/">nodejs学习</a>
           </li>
         
           <li>
-            <a href="/2020/02/06/vue%E5%AE%98%E6%96%B9%E8%A1%A8%E5%8D%95%E9%AA%8C%E8%AF%81/">vue官方表单验证</a>
-          </li>
-        
-          <li>
-            <a href="/2020/01/05/nodejs%E5%AD%A6%E4%B9%A0/">nodejs学习</a>
+            <a href="/2017/03/11/axios%E6%8B%A6%E6%88%AA%E5%99%A8/">axios拦截器学习</a>
           </li>
         
           <li>
